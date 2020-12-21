@@ -6,7 +6,6 @@
 *.ko
 *.obj
 *.elf
-*.sh
 
 # Linker output
 *.ilk
@@ -54,3 +53,6 @@ dkms.conf
 
 # Sarvarian
 export/*
+
+# Devsignerz
+*.sh
