@@ -12,4 +12,4 @@ struct Character
     Vec2 pos;
     int hp;
     int damage;
-};
+} typedef Character;
