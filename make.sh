@@ -1,3 +1,3 @@
-clang main.c -o Lily
-chmod 775 Lily
+clang main.c -o ./exprot/Lily
+chmod 775 ./exprot/Lily
 ./Lily
