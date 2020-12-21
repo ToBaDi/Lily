@@ -52,7 +52,6 @@ Mkfile.old
 dkms.conf
 
 # Sarvarian
-export/*
 
 # Devsignerz
 *.sh
