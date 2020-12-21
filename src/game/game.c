@@ -1,24 +1,6 @@
+#include <stdio.h>
 #include "game.h"
 
-struct Vec2
-{
-    int x;
-    int y;
-} typedef Vec2;
-
-struct Character
-{
-    char *name;
-    Vec2 pos;
-    int hp;
-    int damage;
-} typedef Character;
-
-#define LEVEL_X_SIZE 32
-#define LEVEL_Y_SIZE 8
-typedef char Level[LEVEL_X_SIZE][LEVEL_Y_SIZE];
-
-#include <stdio.h>
 void game_debug()
 {
     Level level_1;
