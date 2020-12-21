@@ -3,6 +3,7 @@
 
 int main()
 {
+    game_debug();
 
     return 0;
 }

@@ -1,1 +1,1 @@
-clang src/game/game.c -o bin/Lily.exe
+clang src/main.c src/game/game.c src/translation/translation.c src/ui/ui.c -o bin/Lily.exe

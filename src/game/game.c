@@ -19,7 +19,7 @@ struct Character
 typedef char Level[LEVEL_X_SIZE][LEVEL_Y_SIZE];
 
 #include <stdio.h>
-int main()
+void game_debug()
 {
     Level level_1;
     int x = 0, y = 0;
@@ -48,6 +48,4 @@ int main()
         printf("\n");
         y++;
     }
-
-    return 0;
 }
