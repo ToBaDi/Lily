@@ -54,6 +54,5 @@ dkms.conf
 # Sarvarian
 
 # Devsignerz
-*.sh
 *.DS_Store
 .DS_Store
