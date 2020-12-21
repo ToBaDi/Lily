@@ -2,23 +2,29 @@
 #include "game/game.h"
 
 int main(){
-	printf("%s", getFile());
-    //printf("Hello World!\n");
-    return 0;
-}
-
-char* getFile(){
-	FILE *fp;
-   int c;
-
-   fp = fopen("test.level","r");
-   while(1) {
-      c = fgetc(fp);
-      if( feof(fp) ) {
-         break;
-      }
-      return c; 
-   }
-   fclose(fp);
-   return(0);
+	FILE *fptr; 
+  
+    char filename[100], c; 
+  
+    printf("Enter the filename to open \n"); 
+    scanf("%s", filename); 
+  
+    // Open file 
+    fptr = fopen(filename, "r"); 
+    if (fptr == NULL) 
+    { 
+        printf("Cannot open file \n"); 
+        exit(0); 
+    } 
+  
+    // Read contents from file 
+    c = fgetc(fptr); 
+    while (c != EOF) 
+    { 
+        printf ("%c", c); 
+        c = fgetc(fptr); 
+    } 
+  
+    fclose(fptr); 
+    return 0; 
 }
