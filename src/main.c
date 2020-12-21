@@ -11,7 +11,7 @@ char* getFile(){
 	FILE *fp;
    int c;
 
-   fp = fopen("file.txt","r");
+   fp = fopen("test.level","r");
    while(1) {
       c = fgetc(fp);
       if( feof(fp) ) {
